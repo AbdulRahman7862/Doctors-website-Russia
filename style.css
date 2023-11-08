@@ -88,19 +88,16 @@ input {
     color: red;
 }
 
-#secondpara{
-    width:20%;
-    height:8rem;
-    border-radius:1rem;
-    padding:1rem;
-}
 
-#secondTextArea{
-    width:20%;
-    height:8rem;
-    border-radius:1rem;
-    padding:1rem;
-}
+    #secondpara,#secondTextArea {
+        width: 52%;
+        height: 8rem;
+        border-radius: 1rem;
+        padding: 1rem;
+    }
+
+
+
 
 #thirdPara{
     width:20%;
@@ -154,203 +151,186 @@ input {
 }
 
 
-/* Media queries */
-/* Extra Small Devices (Phones) */
-@media (min-width: 375px) and (max-width: 667px){
-  .header{
-    gap: 1rem;
-    
+
+
+html {
+    background-color: #fca311;
   }
 
-  .datediv input {
-    width: 37%;
-    height: 20px;
-    border-radius: 1rem;
-    border: 1px solid white;
+  .dateandyear {
+    width: 20%;
+    margin-right: 1rem;
+  }
+
+  .datediv {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+
+  }
+
+  .logo {
+    border: 1px white;
+    border-radius: 17rem;
+    margin-top: 0.5rem;
   }
 
   .firstPara {
-    width: auto;
     text-align: center;
     display: block;
     margin: 0 auto;
-}
-#secondpara,#secondTextArea {
-    width: 89%;
-    height: 8rem;
+  }
+
+  .firstPara label {
+    display: block;
+    text-align: left;
+  }
+
+  .firstPara input, .medical input,.medicineTaking input {
+    width: 100%;
+    height: 40px;
     border-radius: 1rem;
-    padding: 1rem;
-}
-.centered-table {
-    width: 100%;
-    /* margin: 0 auto; */
-    margin-left: 1rem;
-}
-.medical, .experienceofweightloss {
     border: 1px solid white;
-    width: 100%;
     padding: 1rem;
-    margin-left: 1rem;
-    /* display: block; */
-    /* margin: 0 auto; */
-}
-.medicineTaking {
+  }
+
+  textarea{
+    background-color: #fca311;
     border: 1px solid white;
-    width: 112%;
+    border-radius: 1rem;
+    color:white;
+  }
+
+  .medical,.experienceofweightloss{
+    border: 1px solid white;
+    width: 50%;
+    padding: 1rem;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .experienceofweightloss textarea{
+    width: 100%;
+  }
+
+  .medicineTaking{
+    border: 1px solid white;
+    width: 50%;
     padding: 1rem;
     display: block;
     margin: 0 auto;
     margin-top: 1rem;
-}
-
-.foodDiary, .analysis, .photos {
+  }
+  .foodDiary,.analysis,.photos{
     border: 1px solid white;
-    width: 113%;
+    width: 70%;
     padding: 1rem;
     display: block;
     margin: 0 auto;
     margin-top: 1rem;
+  }
+
+  #fifthPara{
+    width: 100%;
+  }  
+  
+  .btn{
+      background-color: black;
+      color: #ede7e7;
+      border: 2px solid rgb(210, 222, 76);
+      border-radius: 0px;
+      padding: 18px 36px;
+      display: inline-block;
+      font-family: "Lucida Console", Monaco, monospace;
+      font-size: 14px;
+      letter-spacing: 1px;
+      cursor: pointer;
+      box-shadow: inset 0 0 0 0 #fca311;
+      -webkit-transition: ease-out 0.4s;
+      -moz-transition: ease-out 0.4s;
+      transition: ease-out 0.4s;
+      display: block;
+      margin: 0 auto;
+      margin-top: 1rem;
+  }
+
+  .btn:hover {
+    box-shadow: inset 0 100px 0 0  #fca311;
+  }
+  .datediv label {
+    margin-top: 0.5rem;
+    padding-right: 1rem;
+  }
+ 
+  .datediv input {
+  width: 23%;
+  height: 20px;
+  border-radius: 1rem;
+  border: 1px solid white;
+  padding: 1rem;
 }
 
-}
 
 
 
 
-/* Small Devices (Portrait Tablets and Small Screens) */
-@media (min-width: 576px) and (max-width: 767px) {
-    .header{
-        gap: 1rem;
-        
-      }
-    
-      .datediv input {
-        width: 37%;
-        height: 20px;
-        border-radius: 1rem;
-        border: 1px solid white;
-      }
-    
-      .firstPara {
-        width: 79%;
-        text-align: center;
-        display: block;
-        margin: 0 auto;
-    }
-    #secondpara,#secondTextArea {
-        width: 89%;
-        height: 8rem;
-        border-radius: 1rem;
-        padding: 1rem;
+@media (min-width: 320px) and (max-width: 479px) {
+    .firstPara, #secondpara, #secondTextArea, .medical, .experienceofweightloss, .foodDiary, .analysis, .photos {
+        width: 100%;
     }
     .centered-table {
         width: 100%;
-        /* margin: 0 auto; */
-        margin-left: 1rem;
     }
-    .experienceofweightloss {
-        border: 1px solid white;
-        width: 113%;
-        padding: 1rem;
-        display: block;
-        margin: 0 auto;
+    .logo {
+        border: 1px white;
+        border-radius: 17rem;
+        margin-top: 0.5rem;
+        width: 100px;
+        height: 100px;
+        padding: 0.4rem;
     }
-    .medicineTaking {
-        border: 1px solid white;
-        width: 112%;
-        padding: 1rem;
-        display: block;
-        margin: 0 auto;
-        margin-top: 1rem;
-    }
-    
-    .foodDiary, .analysis, .photos {
-        border: 1px solid white;
-        width: 113%;
-        padding: 1rem;
-        display: block;
-        margin: 0 auto;
-        margin-top: 1rem;
-    }
-    .medical,.medicineTaking,.foodDiary {
-        border: 1px solid white;
-        width: 93%;
-        padding: 1rem;
-        display: block;
-        margin: 0 auto;
-    }
-    .medical, .experienceofweightloss {
-        border: 1px solid white;
-        width: 100%;
-        padding: 1rem;
-        margin-left: 1rem;
-        /* display: block; */
-        /* margin: 0 auto; */
+    #medical{
+        width: 100%;    
     }
 }
 
-/* Medium Devices (Landscape Tablets and Larger Phones) */
-@media (min-width: 768px) and (max-width: 991px) {
-    .header{
-        gap: 1rem;
-        
-      }
-    
-      .datediv input {
-        width: 37%;
-        height: 20px;
-        border-radius: 1rem;
-        border: 1px solid white;
-      }
-    
-      .firstPara {
-        width: 113%;
-        text-align: center;
-        display: block;
-        margin: 0 auto;
-    }
-    #secondpara,#secondTextArea {
-        width: 89%;
-        height: 8rem;
-        border-radius: 1rem;
-        padding: 1rem;
+
+@media (min-width:480px) and  (max-width: 599px){
+    .firstPara, #secondpara, #secondTextArea, .medical, .experienceofweightloss, .foodDiary, .analysis, .photos {
+        width: 100%;
     }
     .centered-table {
         width: 100%;
-        /* margin: 0 auto; */
-        margin-left: 1rem;
     }
-    .medical, .experienceofweightloss {
-        border: 1px solid white;
-        width: 113%;
-        padding: 1rem;
-        display: block;
-        margin: 0 auto;
+    .logo {
+        border: 1px white;
+        border-radius: 17rem;
+        margin-top: 0.5rem;
+        width: 100px;
+        height: 100px;
+        padding: 0.4rem;
     }
-    .medicineTaking {
-        border: 1px solid white;
-        width: 112%;
-        padding: 1rem;
-        display: block;
-        margin: 0 auto;
-        margin-top: 1rem;
-    }
-    
-    .foodDiary, .analysis, .photos {
-        border: 1px solid white;
-        width: 113%;
-        padding: 1rem;
-        display: block;
-        margin: 0 auto;
-        margin-top: 1rem;
-    }
-    .medical, .experienceofweightloss {
-        border: 1px solid white;
-        width: 100%;
-        padding: 1rem;
-        margin-left: 1rem;
-        /* display: block; */
-        /* margin: 0 auto; */
+    #medical{
+        width: 100%;    
     }
 }
 
+@media (min-width:600px) and (max-width:767px) {
+    .firstPara, #secondpara, #secondTextArea, .medical, .experienceofweightloss, .foodDiary, .analysis, .photos {
+        width: 100%;
+    }
+    .centered-table {
+        width: 100%;
+    }
+    .logo {
+        border: 1px white;
+        border-radius: 17rem;
+        margin-top: 0.5rem;
+        width: 100px;
+        height: 100px;
+        padding: 0.4rem;
+    }
+    #medical{
+        width: 100%;    
+    }
+}
